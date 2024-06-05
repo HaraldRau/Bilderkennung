@@ -1,6 +1,6 @@
-##Inhalt##
+Inhalt
 - Pythoncode zur Bilderlennung über die Webcam
-Python Module
-pip install keras
-pip install opencv-python
-pip install numpy
+<p>Python Module
+<p></p>pip install keras
+<p></p>pip install opencv-python
+<p></p>pip install numpy
