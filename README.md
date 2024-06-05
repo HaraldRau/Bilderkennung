@@ -4,4 +4,3 @@
 <p>pip install keras</p>
 <p>pip install opencv-python</p>
 <p>pip install numpy</p>
-# Test #
