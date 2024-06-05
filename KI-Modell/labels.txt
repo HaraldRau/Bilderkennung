@@ -1,0 +1,3 @@
+0 Buche
+1 Stieleiche
+2 Kastanie
