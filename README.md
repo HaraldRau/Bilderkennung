@@ -11,6 +11,7 @@
   <p>Die Bilder befinden sich im Ordner: <a href="https://github.com/HaraldRau/Bilderkennung/tree/main/Trainingsbilder"><b>Trainingsbilder</b></a></p>
   <h4>Zweite Phase</h4>
 <p>In einer zweiten Phase kann das KI-Modell aus <b>Teachable</b> Machine auf lokalen Systemen offline genutz werden. Dazu wird mit dem Pythonmodul <a href="https://de.wikipedia.org/wiki/Keras">Keras</a> auf das <a href="https://de.wikipedia.org/wiki/TensorFlow">Framework</a> TensorFlow zugeriffen. Sie müssen nichts programmieren, das relativ übersichtliche Programm <a href="https://github.com/HaraldRau/Bilderkennung/blob/8c23a8d014962fdc6be4e6179d15725e47774308/baumarten.py">baumerkennung.py</a> wurde in Python geschrieben und steht hier mit dem Beispielmodell zum <a href="https://github.com/HaraldRau/Bilderkennung/archive/refs/heads/main.zip">Download</a> bereit.</p>
+<h4>Zu installierende Software</h4>
 <p>Um den Beispielcode auszuführen, ist folgende Software auf dem PC zu installieren:</p>
 <b>Programmiersprache Python</b>
 <ul>
