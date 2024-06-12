@@ -1,13 +1,16 @@
 <h2>KI-Bilderkennung im Unterricht einsetzen</h2>
-<p>Es wird an einem einfachen Beispiel die Funktionsweise einer Bilderkennungs durch ein trainiertes KI-Modell erklärt und genutzt. Zur Modellbildung wird in der ersten Phase das Onlinetool  <a href="https://teachablemachine.withgoogle.com/"><b>Techable Machine</b></a> genutzt.</p>
-<p>In einer zweiten Phase kann das KI-Modell aus Teachable Machine auf lokalen Systemen offline genutz werden. Dazu steht hier ein Beispielmodell und der dazu gehörige Beispielcode bereit.</p>
-<p>Das Beispielmodell beinhaltet Bilder von vier Baumarten</p>
+<h4>Erste Phase</h4>
+<p>Es wird an einem einfachen Beispiel die Funktionsweise der Bilderkennung durch ein trainiertes KI-Modell erklärt. Zur Modellbildung wird das Onlinetool  <a href="https://teachablemachine.withgoogle.com/"><b>Teachable Machine</b></a> genutzt. Um das Modell zu trainieren benötigt <b>Teachable Machine</b> Beispielbilder. Ich habe dazu Blätter von 4 Laubbäumen fotogrfiert oder eingescannt. Pro Baumart sollten es mindestens 5 Bilder sein. Weiterhin sollten sich die Bilder der unterschiedlichen Baumsorten deutlich unterscheiden.</p>
+<p>Ich habe Bilder von diesen vier Baumarten verwendet.</p>
   <ul>
     <li>Stieleiche</li>
     <li>Kastanie</li>
     <li>Buche</li>
     <li>???</li>
   </ul>
+  <p>Die Bilder befinden sich im Ordner: <a href="https://github.com/HaraldRau/Bilderkennung/tree/main/Trainingsbilder"><b>Trainingsbilder</b></a></p>
+  <h4>Zweite Phase</h4>
+<p>In einer zweiten Phase kann das KI-Modell aus Teachable Machine auf lokalen Systemen offline genutz werden. Dazu wird mit dem Pythonmodul <a href="https://de.wikipedia.org/wiki/Keras">Keras</a> auf das <a href="https://de.wikipedia.org/wiki/TensorFlow">Framework</a> TensorFlow zugeriffen. Sie müssen nichts programmieren, das relativ übersichtliche Programm <a href="https://github.com/HaraldRau/Bilderkennung/blob/8c23a8d014962fdc6be4e6179d15725e47774308/baumarten.py">baumerkennung.py</a> wurde in Python geschrieben und steht hier mit dem Beispielmodell zum <a href="https://github.com/HaraldRau/Bilderkennung/archive/refs/heads/main.zip">Download</a> bereit.</p>
 <p>Um den Beispielcode auszuführen, ist folgende Software auf dem PC zu installieren:</p>
 <b>Programmiersprache Python</b>
 <ul>
