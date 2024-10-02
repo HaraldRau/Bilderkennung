@@ -38,6 +38,14 @@ Eingabebild:
 
 Der Filter wird über das Bild geschoben, und an jeder Position werden die Werte unter dem Filter mit dem Filter multipliziert und summiert, um einen neuen Wert zu erzeugen. Wenn wir das für verschiedene Positionen im Bild tun, erhalten wir eine neue Ausgabe (eine sogenannte Feature Map).
 
+ Feature Map:
+```
+[-1, -4, 0]
+[1, -4, -1]
+[1, -5, -2]
+```
+
+
 ### Warum Convolution in CNNs wichtig ist:
 
 1. **Erkennung lokaler Muster**: Convolutional Layers ermöglichen es CNNs, lokale Merkmale in den Daten zu erkennen. Zum Beispiel kann ein Filter Kanten, Linien oder Texturen erkennen.
