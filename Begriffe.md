@@ -1,3 +1,57 @@
+##**Convolutional Neural Networks**
+
+"**Convolutional**" im Kontext eines Convolutional Neural Networks (CNN) bezieht sich auf die Anwendung des mathematischen Vorgangs der **Faltung (Convolution)**, der in den sogenannten **Convolutional Layers** stattfindet. Diese Faltung ist der zentrale Mechanismus, der es CNNs ermöglicht, lokale Muster und Merkmale in Bildern oder anderen mehrdimensionalen Daten zu erkennen.
+
+### Was ist Faltung (Convolution)?
+
+Faltung ist eine mathematische Operation, bei der ein kleinerer Filter (auch **Kern** oder **Kernel** genannt) über ein größeres Eingabebild "faltet" und einen neuen Wert berechnet, indem Werte im Bild mit den entsprechenden Werten im Filter multipliziert und aufsummiert werden. Der Filter extrahiert dabei spezifische Merkmale wie Kanten, Texturen oder andere Muster aus den Daten.
+
+### Wie funktioniert Faltung in CNNs?
+
+Die Faltung in CNNs erfolgt durch das Überlagern eines kleinen **Kernels** (z. B. 3x3 oder 5x5 Matrix) auf das Eingabebild oder eine vorherige Feature Map. Dann wird eine Operation durchgeführt, bei der die Pixelwerte unter dem Filterelement mit den Werten des Filters multipliziert und anschließend summiert werden. Dieses Verfahren wird über das gesamte Bild wiederholt, wobei der Filter "slided" (verschoben) wird, um die lokalen Informationen zu erfassen.
+
+#### Schritte in der Faltung:
+1. **Eingabe**: Ein Bild oder eine Feature Map (z. B. 2D-Matrix mit Pixelwerten).
+2. **Kernel (Filter)**: Eine kleine Matrix (z. B. 3x3 oder 5x5), die die Faltungsoperation durchführt. Dieser Filter wird auf verschiedene Bereiche des Bildes angewendet.
+3. **Berechnung**: An jeder Position des Bildes wird eine elementweise Multiplikation zwischen den Werten im Filter und den entsprechenden Pixelwerten durchgeführt, und die Ergebnisse werden summiert. Dies gibt einen neuen Wert für die Ausgabe-Feature-Map.
+4. **Verschiebung (Stride)**: Der Filter wird um eine bestimmte Anzahl von Schritten über das Bild bewegt (z. B. um 1 oder 2 Pixel), um die nächste Berechnung durchzuführen.
+5. **Ergebnis**: Eine neue Feature-Map, die die extrahierten Merkmale des Bildes enthält.
+
+### Beispiel für Faltung:
+Nehmen wir ein Beispiel mit einem 3x3-Filter und einem 5x5-Bild:
+
+Eingabebild:
+```
+[1, 0, 1, 2, 1]
+[0, 2, 1, 0, 1]
+[1, 0, 2, 1, 0]
+[2, 1, 0, 2, 1]
+[1, 0, 1, 2, 0]
+```
+
+3x3-Filter (Kernel):
+```
+[1, 0, -1]
+[1, 0, -1]
+[1, 0, -1]
+```
+
+Der Filter wird über das Bild geschoben, und an jeder Position werden die Werte unter dem Filter mit dem Filter multipliziert und summiert, um einen neuen Wert zu erzeugen. Wenn wir das für verschiedene Positionen im Bild tun, erhalten wir eine neue Ausgabe (eine sogenannte Feature Map).
+
+### Warum Convolution in CNNs wichtig ist:
+
+1. **Erkennung lokaler Muster**: Convolutional Layers ermöglichen es CNNs, lokale Merkmale in den Daten zu erkennen. Zum Beispiel kann ein Filter Kanten, Linien oder Texturen erkennen.
+   
+2. **Parameterteilung**: Ein CNN verwendet denselben Filter (Kern) für alle Teile des Bildes, was die Anzahl der zu lernenden Parameter erheblich reduziert. Dies spart Rechenleistung und macht das Netzwerk effizienter.
+
+3. **Translation Invariance**: Da der Filter über das gesamte Bild gleitet, kann das Netzwerk dieselben Merkmale an verschiedenen Positionen im Bild erkennen. Dies macht CNNs robust gegenüber Verschiebungen von Objekten im Bild.
+
+4. **Hierarchische Merkmalsextraktion**: Mehrere Convolutional Layers hintereinander können immer komplexere Merkmale extrahieren. Die ersten Schichten lernen oft einfache Merkmale wie Kanten, während spätere Schichten komplexere Muster wie Formen und Objekte erkennen.
+
+### Fazit:
+
+Das Wort "**Convolutional**" in CNNs verweist auf die zentrale Operation, die Faltung, die es diesen Netzwerken ermöglicht, visuelle Merkmale effizient und skalierbar zu erkennen. Dies macht CNNs besonders gut geeignet für Anwendungen in der Bild- und Videoverarbeitung, da sie lokale Muster erfassen und daraus Merkmale auf unterschiedlichen Abstraktionsebenen lernen können.
+
 ## **Pooling**
 
 In einem Convolutional Neural Network (CNN) beziehen sich "Pooling" und "Max Pooling" auf Techniken zur Reduktion der Dimensionen der Feature Maps (den Ausgabedaten) nach der Anwendung von Convolution-Schichten. Diese Techniken tragen dazu bei, die Berechnungen effizienter zu machen, Überanpassung zu reduzieren und das Netzwerk robuster gegenüber kleinen Variationen in den Daten zu machen.
