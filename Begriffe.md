@@ -1,4 +1,5 @@
-***Pooling***
+## **Pooling**
+
 In einem Convolutional Neural Network (CNN) beziehen sich "Pooling" und "Max Pooling" auf Techniken zur Reduktion der Dimensionen der Feature Maps (den Ausgabedaten) nach der Anwendung von Convolution-Schichten. Diese Techniken tragen dazu bei, die Berechnungen effizienter zu machen, Überanpassung zu reduzieren und das Netzwerk robuster gegenüber kleinen Variationen in den Daten zu machen.
 
 ### 1. **Pooling**
