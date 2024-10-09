@@ -1,7 +1,7 @@
 <h2>Projekt zum Öffnen in Teachable Machine </h2>
-<p>Hier befinden sich zwei Projekte für die Teachable</p>
+<p>Hier befinden sich zwei Projekte für die Teachable.</p>
 <p>Laden Sie sich die Projekte herunter und öffnen Sie diese wieder in Teachable Machine.</p>
-<h4>Zum herunterladen</h4>
+<h4>Zum Herunterladen</h4>
 <ul>
   <li>Auf das Projekt klicken</li>
   <li>Rechts auf die Schaltfläche RAW oder auf das Downloadsymbol klicken</li>
