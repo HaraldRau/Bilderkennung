@@ -9,6 +9,7 @@
 </ul>
 <h4>Zum Hochladen in Teachable Machine</h4>
 <ul>
+  <li>https://teachablemachine.withgoogle.com/ öffnen</li>
   <li>Links auf die drei Teachable Machine klicken</li>
   <li>Dann Projekt aus Datei öffnen</li>
   <li>Jetzt muss das Modell nur noch trainiert werden</li>
