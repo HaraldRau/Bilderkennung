@@ -1,4 +1,4 @@
-## **Convolutional Neural Networks**
+## **Convolutional Neural Networks [Quelle ChatGPT]**
 
 "**Convolutional**" im Kontext eines Convolutional Neural Networks (CNN) bezieht sich auf die Anwendung des mathematischen Vorgangs der **Faltung (Convolution)**, der in den sogenannten **Convolutional Layers** stattfindet. Diese Faltung ist der zentrale Mechanismus, der es CNNs ermöglicht, lokale Muster und Merkmale in Bildern oder anderen mehrdimensionalen Daten zu erkennen.
 
